@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Air Quality Dashboard</title>
+</head>
+<body>
+    <h1>Air Quality Data</h1>
+    <ul>
+        {% for utc_datetime, value in results_list %}
+            <li>{{ utc_datetime }} - {{ value }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
